@@ -16,15 +16,17 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON "test/fixtures/package.json"
 
     coffeelint:
-      files: ["Gruntfile.coffee", "src/**/*.coffee", "test/**/*.coffee"]
+      files: ["Gruntfile.coffee", "tasks/**/*.coffee", "test/**/*.coffee"]
       options:
         max_line_length:
           value: 200
           level: "error"
 
+    # Test clean
     clean:
       tests: ["test/tmp"]
 
+    # Test copy
     copy:
       fixtures:
         expand: true
@@ -47,11 +49,13 @@ module.exports = (grunt) ->
         src: ["*.json", "version.txt"]
         dest: "test/tmp/major/"
 
+    # Test bumping
     bumper:
       options:
         tasks: ["custom"]
         files: ["test/tmp/package.json", "test/tmp/bower.json"]
 
+    # Unit tests.
     mochacov:
       options:
         bail: true
