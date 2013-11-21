@@ -22,13 +22,6 @@ module.exports = (grunt) ->
           value: 200
           level: "error"
 
-    coffee:
-      tasks:
-        options:
-          bare: true
-        files:
-          "tasks/bumper.js": "src/bumper.coffee"
-
     clean:
       tests: ["test/tmp"]
 
@@ -81,11 +74,10 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-coffeelint"
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-contrib-clean"
-  grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-mocha-cov"
 
   # Tasks
-  grunt.registerTask "default", ["coffeelint", "coffee"]
+  grunt.registerTask "default", ["coffeelint"]
   grunt.registerTask "test", [
     "default"
     "clean"
