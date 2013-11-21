@@ -59,8 +59,9 @@ Sometimes you load the content of `package.json` into a grunt config. This will 
 
 ```
 bumper:
-  files:         ["package.json", "bower.json"]
-  updateConfigs: ["pkg",          "bower"]
+  options:
+    files:         ["package.json", "bower.json"]
+    updateConfigs: ["pkg",          "bower"]
 
 ```
 
