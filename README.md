@@ -1,5 +1,8 @@
 # grunt-bumper
 
+[![Build Status](https://travis-ci.org/weareinteractive/grunt-bumper.png?branch=master)](https://travis-ci.org/weareinteractive/grunt-bumper)
+[![Dependency Status](https://gemnasium.com/weareinteractive/grunt-bumper.png)](https://gemnasium.com/weareinteractive/grunt-bumper)
+
 > Bump package version, run tasks, git tag, commit & push.
 >
 > This is based on [grunt-push-release](https://github.com/JonnyBGod/grunt-push-release)
