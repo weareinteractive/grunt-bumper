@@ -51,12 +51,14 @@ bumper:
 ```
 
 #### files
-Type `Array` Default `['package.json']`
+Type `Array`
+Default `['package.json']`
 
 List of files to bump. Maybe you wanna bump 'component.json' as well ?
 
 #### updateConfigs
-Type `Array` Default `['pkg']`
+Type `Array`
+Default `['pkg']`
 
 Sometimes you load the content of `package.json` into a grunt config. This will update the config property, so that even tasks running in the same grunt process see the updated value.
 
@@ -69,7 +71,8 @@ bumper:
 ```
 
 #### releaseBranch
-Type `Boolean` Default `false`
+Type `Boolean`
+Default `false`
 
 Define branch(es) on which it is allowed to make releases. Either define a single one as string or severals as array. This helps to not accidentially make a release on a topic branch.
 
@@ -80,74 +83,88 @@ push: {
 ```
 
 #### runTasks
-Type `Boolean` Default `true`
+Type `Boolean`
+Default `true`
 
 Do you want to run tasks after bumping the version?
 
 #### tasks
-Type `Array` Default `['default']`
+Type `Array`
+Default `['default']`
 
 List of tasks to be executed after bumping the version and before adding/commiting the files.
 
 #### add
-Type `Boolean` Default `true`
+Type `Boolean`
+Default `true`
 
 Do you want to `git add` files?
 
 #### addFiles
-Type `Array` Default `['.']`
+Type `Array`
+Default `['.']`
 
 An array of files that you wanna add. You can use `['.']` to add all files.
 
 #### commit
-Type `Boolean` Default `true`
+Type `Boolean`
+Default `true`
 
 Do you wanna commit the changes?
 
 #### commitMessage
-Type `String` Default `'Release v%VERSION%'`
+Type `String`
+Default `'Release v%VERSION%'`
 
 The commit message. You can use `%VERSION%` which will get replaced with the new version.
 
 #### commitFiles
-Type `Array` Default `['-a']`
+Type `Array`
+Default `['-a']`
 
 An array of files that you wanna commit. You can use `['-a']` to commit all files.
 
 #### createTag
-Type `Boolean` Default `true`
+Type `Boolean`
+Default `true`
 
 Do you want to create a git tag?
 
 #### tagName
-Type `String` Default `'v%VERSION%'`
+Type `String`
+Default `'v%VERSION%'`
 
 The tag name. You can use `%VERSION%` which will get replaced with the new version.
 
 #### tagMessage
-Type `String` Default `'Version v%VERSION%'`
+Type `String`
+Default `'Version v%VERSION%'`
 
 The tag message. You can use `%VERSION%` which will get replaced with the new version.
 
 #### push
-Type `Boolean` Default `true`
+Type `Boolean`
+Default `true`
 
 Do you want to push all these changes?
 
 #### pushTo
-Type `String` Default `'origin'`
+Type `String`
+Default `'origin'`
 
 Name of the remote branch to push to.
 
 #### npm
-Type `Boolean` Default `false`
+Type `Boolean`
+Default `false`
 
 Do you wanna publish all these changes to NPM?
 
 Make sure you have registered an npm used: 'npm adduser'
 
 #### npmTag
-Type `String` Default `'Release v%VERSION%'`
+Type `String`
+Default `'Release v%VERSION%'`
 
 The name of the tag. You can use `%VERSION%` which will get replaced with the new version.
 
