@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/weareinteractive/grunt-bumper.png?branch=master)](https://travis-ci.org/weareinteractive/grunt-bumper)
 [![Dependency Status](https://gemnasium.com/weareinteractive/grunt-bumper.png)](https://gemnasium.com/weareinteractive/grunt-bumper)
+[![NPM version](https://badge.fury.io/js/grunt-bumper.png)](http://badge.fury.io/js/grunt-bumper)
 
 > Bump package version, run tasks, git tag, commit & push.
 >
