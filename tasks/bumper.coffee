@@ -121,7 +121,8 @@ module.exports = (grunt) ->
 
         unless globalVersion
           globalVersion = version
-        else grunt.warn "Bumping multiple files with different versions!" if globalVersion isnt version
+        else
+          grunt.warn "Bumping multiple files with different versions!" if globalVersion isnt version
 
         configProperty = opts.updateConfigs[idx]
 
@@ -138,8 +139,16 @@ module.exports = (grunt) ->
 
     # RUN TASKS
     runIf opts.runTasks, ->
-      grunt.task.run(opts.tasks)
-      next()
+      grunt.log.ok("Running tasks: #{opts.tasks}")
+      for task in opts.tasks
+        grunt.util.spawn({grunt:true, args:[task]}, (error, result, code) ->
+          if error?
+            grunt.fail.fatal(result)
+          else
+            grunt.log.write(result)
+            grunt.log.write("\n")
+          next()
+        )
 
     # when only commiting, read the version from package.json / pkg config
     runIf not opts.bumpVersion, ->

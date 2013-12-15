@@ -72,7 +72,10 @@ module.exports = (grunt) ->
 
   # Register custom task to test the package config version update and build tasks setting:
   grunt.registerTask "custom", ->
-    grunt.file.write "test/tmp/version.txt", grunt.config("pkg.version")
+    done = @async()
+    pkg = grunt.file.readJSON "test/tmp/package.json"
+    grunt.file.write "test/tmp/version.txt", pkg.version
+    setTimeout(done, 1000)
 
   # Load npm tasks
   grunt.loadNpmTasks "grunt-coffeelint"

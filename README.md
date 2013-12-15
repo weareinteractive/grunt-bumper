@@ -94,6 +94,7 @@ Type `Array`
 Default `['default']`
 
 List of tasks to be executed after bumping the version and before adding/commiting the files.
+*Note: as this is being executed as a child process you are running in a different context!*
 
 #### add
 Type `Boolean`
