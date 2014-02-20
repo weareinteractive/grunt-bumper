@@ -44,19 +44,19 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "chai": "~1.8.0",
-    "grunt-coffeelint": "0.0.7",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-mocha-cov": "0.0.7",
-    "coffee-script": "~1.6.3",
-    "grunt": "~0.4.1"
+    "chai": "~1.9",
+    "grunt-coffeelint": "~0.0",
+    "grunt-contrib-copy": "~0.5",
+    "grunt-contrib-clean": "~0.5",
+    "grunt-mocha-cov": "~0.2",
+    "coffee-script": "~1.6",
+    "grunt": "~0.4"
   },
   "dependencies": {
     "semver": "~2.2.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4"
   },
   "keywords": [
     "gruntplugin",
