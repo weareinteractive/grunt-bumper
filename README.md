@@ -216,7 +216,17 @@ $ grunt bumper-publish //Just publishes to NPM overriding (npm option: false)
 ```
 
 ## Contributing
+[![I Love Open Source](http://www.iloveopensource.io/images/logo-lightbg.png)](http://www.iloveopensource.io/projects/52ee312487659fce6600004e)
+
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
 ## License
 Copyright (c) We Are Interactive under the MIT license.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/weareinteractive/grunt-bumper/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
