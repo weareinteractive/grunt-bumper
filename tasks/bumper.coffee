@@ -95,6 +95,9 @@ module.exports = (grunt) ->
 
           # Allow for --force
           next()
+      else
+        next()
+
 
     globalVersion = undefined # when bumping multiple files
     gitVersion = undefined # when bumping using `git describe`
