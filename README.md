@@ -8,6 +8,11 @@
 >
 > This is based on [grunt-push-release](https://github.com/JonnyBGod/grunt-push-release)
 
+**DEPRICATION NOTICE**
+
+> This project hasn't been maintained and updated for a while now. 
+> Please use as is and send PRs if you need changes.
+
 ## Getting Started
 
 This plugin requires Grunt `~0.4.1`
@@ -216,8 +221,6 @@ $ grunt bumper-publish //Just publishes to NPM overriding (npm option: false)
 ```
 
 ## Contributing
-[![I Love Open Source](http://www.iloveopensource.io/images/logo-lightbg.png)](http://www.iloveopensource.io/projects/52ee312487659fce6600004e)
-
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 1. Fork it
