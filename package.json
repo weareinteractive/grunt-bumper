@@ -56,7 +56,7 @@
     "semver": "~2.2"
   },
   "peerDependencies": {
-    "grunt": "~0.4"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin",
