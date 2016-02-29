@@ -1,7 +1,7 @@
 {
   "name": "grunt-bumper",
   "description": "Bump package version, run tasks, git tag, commit & push.",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "homepage": "https://github.com/weareinteractive/grunt-bumper",
   "author": {
     "name": "franklin",
